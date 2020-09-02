@@ -1,4 +1,4 @@
-export const theme = {
+export default {
 	colors: {
 		primary: '#FF8700',
 		primaryDark: '#FF7A00',
@@ -36,4 +36,4 @@ export const theme = {
 		default: '0 0.5rem 2rem rgba(0, 0, 0, 0.08)',
 		flat: '0 0.2rem 0.2rem rgba(0, 0, 0, 0.08)',
 	},
-};
+} as const;
