@@ -3,12 +3,13 @@ import BancoInter  from './assets/images/logo.svg';
 import { ThemeProvider } from 'styled-components';
 import theme from './styles/theme'
 import GlobalStyle from './styles/global'
+import Header from './components/Header';
 
 const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
 			<GlobalStyle />
-      <h1>Banco Inter</h1>
+      <Header></Header>
 			<img src={BancoInter} alt="{BancoInter}" />
     </ThemeProvider>
 
