@@ -1,9 +1,14 @@
 import React from 'react'
-import { Container } from './styles'
+import { Container, Wrapper } from './styles'
+import { BancoInter } from '../../assets/images';
 
 const Header: React.FC = () => {
 	return (
-		<Container />
+		<Container>
+			<Wrapper>
+				<BancoInter />
+			</Wrapper>
+			</Container>
 	)
 }
 
