@@ -10,7 +10,6 @@ const App: React.FC = () => {
 			<GlobalStyle />
       <Header></Header>			
     </ThemeProvider>
-
   );
 }
 
