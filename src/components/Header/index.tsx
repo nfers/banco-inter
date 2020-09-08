@@ -4,8 +4,11 @@ import { Container, Wrapper, NavLeft, NavRight } from './styles'
 import { BancoInter } from '../../assets/images';
 import Button from '../Button';
 import AccountDropdown from '../AccountDropdown';
+import { User } from '../Header/Header';
 
 const Header: React.FC = () => {
+	const user: User = { name:  'Nay Ferreira'};
+
 	return (
 		<Container>
 			<Wrapper>
@@ -17,7 +20,7 @@ const Header: React.FC = () => {
 					<Button 
 					variant="secondary"
 					>Simulador Renda fixa</Button>	
-					<AccountDropdown />
+					<AccountDropdown user={user}/>
 				</NavRight>
 			</Wrapper>
 		</Container>
