@@ -1,10 +1,9 @@
 import React from 'react'
 import { Container } from './styles'
-import {ButtonProps} from './Button'
+import { ButtonProps } from './Button'
 
 const Button: React.FC<ButtonProps> = ({ 
 	children, 
-	loading, 
 	variant, 
 	type, 
 	...rest 

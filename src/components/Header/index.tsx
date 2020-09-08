@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { memo } from 'react'
+
 import { Container, Wrapper, NavLeft, NavRight } from './styles'
 import { BancoInter } from '../../assets/images';
 import Button from '../Button';
@@ -14,8 +15,7 @@ const Header: React.FC = () => {
 				</NavLeft>
 				<NavRight>
 					<Button 
-					type="submit"
-					variant="primary"
+					variant="secondary"
 					>Simulador Renda fixa</Button>	
 					<AccountDropdown />
 				</NavRight>
@@ -24,4 +24,4 @@ const Header: React.FC = () => {
 	)
 }
 
-export default Header;
+export default memo(Header);
